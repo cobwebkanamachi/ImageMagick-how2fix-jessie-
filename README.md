@@ -1,5 +1,10 @@
 # ImageMagick-how2fix-jessie on docker
 This is quick fixation procedures for ImageMagick vulnerability issue on Debian jessie.<BR>
+<BR>
+https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3714<BR>
+See also.<BR>
+https://www.jpcert.or.jp/at/2016/at160021.html<BR>
+<BR>
 I read two articles bellow, Ref.1 refs PoCs for test, it is useful.<BR>
 Ref.2 refs make procedure all worked.<BR>
 So, please follow Ref.2 for mainly to make and make install.<BR>

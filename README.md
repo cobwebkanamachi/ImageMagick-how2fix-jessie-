@@ -56,24 +56,24 @@ SAFE<BR>
 7) verify on php<BR>
 https://stackoverflow.com/questions/4208253/verify-imagemagick-installation<BR>
 more d.php<BR>
-<pre>
-<?php
-//This function prints a text array as an html list.
-function alist ($array) {  
-  $alist = "<ul>";
-  for ($i = 0; $i < sizeof($array); $i++) {
-    $alist .= "<li>$array[$i]";
-  }
-  $alist .= "</ul>";
-  return $alist;
-}
-//Try to get ImageMagick "convert" program version number.
-exec("convert -version", $out, $rcode);
-//Print the return code: 0 if OK, nonzero if error.
-echo "Version return code is $rcode <br>";
-//Print the output of "convert -version"
-echo alist($out);
-?>
+
+    <?php
+    //This function prints a text array as an html list.
+    function alist ($array) {  
+      $alist = "<ul>";
+      for ($i = 0; $i < sizeof($array); $i++) {
+        $alist .= "<li>$array[$i]";
+      }
+      $alist .= "</ul>";
+      return $alist;
+    }
+    //Try to get ImageMagick "convert" program version number.
+    exec("convert -version", $out, $rcode);
+    //Print the return code: 0 if OK, nonzero if error.
+    echo "Version return code is $rcode <br>";
+    //Print the output of "convert -version"
+    echo alist($out);
+    ?>
 <BR># php d.php<BR>
 <pre>
 Version return code is 1 <br>

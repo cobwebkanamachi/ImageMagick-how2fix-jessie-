@@ -53,4 +53,34 @@ SAFE<BR>
 testing MSL<BR>
 SAFE<BR>
 <BR>
+7) verify on php<BR>
+https://stackoverflow.com/questions/4208253/verify-imagemagick-installation<BR>
+more d.php<BR>
+<pre>
+<?php
+//This function prints a text array as an html list.
+function alist ($array) {  
+  $alist = "<ul>";
+  for ($i = 0; $i < sizeof($array); $i++) {
+    $alist .= "<li>$array[$i]";
+  }
+  $alist .= "</ul>";
+  return $alist;
+}
+//Try to get ImageMagick "convert" program version number.
+exec("convert -version", $out, $rcode);
+//Print the return code: 0 if OK, nonzero if error.
+echo "Version return code is $rcode <br>";
+//Print the output of "convert -version"
+echo alist($out);
+?>
+<BR># php d.php<BR>
+<pre>
+Version return code is 1 <br>
+<ul>
+ <li>Version: ImageMagick 7.0.1-3 Q16 x86_64 2016-05-13 http://www.imagemagick.org<li>Copyright: Copyright (C) 1999-2016 ImageMagick Studio LLC
+ <li>License: http://www.imagemagick.org/script/license.php<li>Features: Cipher DPC HDRI OpenMP
+ <li>Delegates (built-in): bzlib djvu fontconfig freetype gvc jbig jng jpeg lcms lqr lzma openexr png tiff wmf x xml zlib
+</ul>
+</pre>
  

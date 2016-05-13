@@ -4,6 +4,7 @@ This is quick fixation procedures for ImageMagick vulnerability issue on Debian 
 https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3714<BR>
 See also.<BR>
 https://www.jpcert.or.jp/at/2016/at160021.html<BR>
+https://ja.amimoto-ami.com/2016/05/06/imagemagick-cve-2016-3714-and-more/<BR>
 <BR>
 I read two articles bellow, Ref.1 refs PoCs for test, it is useful.<BR>
 Ref.2 refs make procedure all worked.<BR>
